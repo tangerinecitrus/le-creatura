@@ -442,6 +442,7 @@ line_spacing = 24.0
 
 [node name="Player" type="CharacterBody2D" unique_id=252480921]
 position = Vector2(32, 40)
+collision_layer = 2
 script = ExtResource("1_3smsa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1764823028]
