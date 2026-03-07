@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://b2evu7f5wcch0"]
 
-[ext_resource type="Script" uid="uid://c65qu4nfnaw7f" path="res://Scenes/Player.cs" id="1_3smsa"]
+[ext_resource type="Script" uid="uid://c65qu4nfnaw7f" path="res://Scripts/Player.cs" id="1_3smsa"]
 [ext_resource type="Texture2D" uid="uid://pakjqbol2gcq" path="res://Assets/Player/Attack 1.png" id="1_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://c5eqqmwefcrdn" path="res://Assets/Player/Attack 2.png" id="2_3smsa"]
 [ext_resource type="Texture2D" uid="uid://gbxq7i8kbkfu" path="res://Assets/Player/Death.png" id="3_8erm5"]
 [ext_resource type="Texture2D" uid="uid://ce8dhhb3aw25q" path="res://Assets/Player/Hurt.png" id="4_f1ek2"]
 [ext_resource type="Texture2D" uid="uid://cv8h206jk8uuj" path="res://Assets/Player/Idle.png" id="5_tx1dd"]
 [ext_resource type="Texture2D" uid="uid://c83yo87pkdcho" path="res://Assets/Player/walk.png" id="6_gymyn"]
+[ext_resource type="Script" uid="uid://b83lp1567qtmq" path="res://Scripts/Enemy.cs" id="8_8erm5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pu2lt"]
 radius = 11.501915
@@ -437,6 +438,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="LabelSettings" id="LabelSettings_3smsa"]
+line_spacing = 24.0
+
 [node name="Player" type="CharacterBody2D" unique_id=252480921]
 position = Vector2(32, 40)
 script = ExtResource("1_3smsa")
@@ -450,3 +454,20 @@ shape = SubResource("CapsuleShape2D_pu2lt")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1143735839]
 sprite_frames = SubResource("SpriteFrames_sscpr")
 animation = &"attack1"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1247400258]
+
+[node name="HungerLabel" type="Label" parent="CanvasLayer" unique_id=106052860]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 210.0
+offset_bottom = 60.0
+text = "Hunger: 100"
+label_settings = SubResource("LabelSettings_3smsa")
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1942059]
+script = ExtResource("8_8erm5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1041925303]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=1711676862]
