@@ -32,7 +32,7 @@ public partial class Player : CharacterBody2D
 		{
 			_sprite.Play("idle");
 		}
-
+		
 		Velocity = velocity;
 		MoveAndSlide();
 	}
