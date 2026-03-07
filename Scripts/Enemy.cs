@@ -46,7 +46,7 @@ public partial class Enemy : CharacterBody2D
 	{
 		_sprite.Play("death");
 		Velocity = Vector2.Zero;
-		await ToSignal(_sprite, AnimatedSprite2D.SignalName.AnimationFinished);
+		// await ToSignal(_sprite, AnimatedSprite2D.SignalName.AnimationFinished);
 		QueueFree();
 	}
 }
