@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://ce8dhhb3aw25q" path="res://Assets/Player/Hurt.png" id="4_f1ek2"]
 [ext_resource type="Texture2D" uid="uid://cv8h206jk8uuj" path="res://Assets/Player/Idle.png" id="5_tx1dd"]
 [ext_resource type="Texture2D" uid="uid://c83yo87pkdcho" path="res://Assets/Player/walk.png" id="6_gymyn"]
-[ext_resource type="Script" uid="uid://b83lp1567qtmq" path="res://Scripts/Enemy.cs" id="8_8erm5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pu2lt"]
 radius = 11.501915
@@ -464,10 +463,3 @@ offset_right = 210.0
 offset_bottom = 60.0
 text = "Hunger: 100"
 label_settings = SubResource("LabelSettings_3smsa")
-
-[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1942059]
-script = ExtResource("8_8erm5")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1041925303]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Enemy" unique_id=1711676862]
