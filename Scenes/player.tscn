@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b2evu7f5wcch0"]
 
-[ext_resource type="Script" uid="uid://c65qu4nfnaw7f" path="res://Scripts/Player.cs" id="1_3smsa"]
+[ext_resource type="Script" uid="uid://t55xe1p74ule" path="res://Scenes/player.gd" id="1_3smsa"]
 [ext_resource type="Texture2D" uid="uid://pakjqbol2gcq" path="res://Assets/Player/Attack 1.png" id="1_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://c5eqqmwefcrdn" path="res://Assets/Player/Attack 2.png" id="2_3smsa"]
 [ext_resource type="Texture2D" uid="uid://gbxq7i8kbkfu" path="res://Assets/Player/Death.png" id="3_8erm5"]
@@ -441,7 +441,6 @@ animations = [{
 line_spacing = 24.0
 
 [node name="Player" type="CharacterBody2D" unique_id=252480921]
-position = Vector2(32, 40)
 collision_layer = 2
 script = ExtResource("1_3smsa")
 

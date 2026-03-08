@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bfqt4wuoejn0w"]
 
-[ext_resource type="Script" uid="uid://b83lp1567qtmq" path="res://Scripts/Enemy.cs" id="1_hghv2"]
+[ext_resource type="Script" uid="uid://bkagsq1bt3rit" path="res://Scripts/enemy.gd" id="1_287tu"]
 [ext_resource type="Texture2D" uid="uid://cjnbrjycsukea" path="res://Assets/Enemies/Idle.png" id="2_287tu"]
 [ext_resource type="Texture2D" uid="uid://qfduep4yh6nf" path="res://Assets/Enemies/Idle_2.png" id="3_0830c"]
 [ext_resource type="Texture2D" uid="uid://v6tew42d28xb" path="res://Assets/Enemies/Walk.png" id="4_ghaa6"]
@@ -199,7 +199,7 @@ animations = [{
 }]
 
 [node name="Enemy" type="CharacterBody2D" unique_id=447933125]
-script = ExtResource("1_hghv2")
+script = ExtResource("1_287tu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1359424232]
 
