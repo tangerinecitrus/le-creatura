@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://bfqt4wuoejn0w"]
 
-[ext_resource type="Script" uid="uid://bkagsq1bt3rit" path="res://Scripts/enemy.gd" id="1_287tu"]
+[ext_resource type="Script" uid="uid://bkagsq1bt3rit" path="res://Scripts/Enemy.gd" id="1_287tu"]
 [ext_resource type="Texture2D" uid="uid://cjnbrjycsukea" path="res://Assets/Enemies/Idle.png" id="2_287tu"]
 [ext_resource type="Texture2D" uid="uid://qfduep4yh6nf" path="res://Assets/Enemies/Idle_2.png" id="3_0830c"]
 [ext_resource type="Texture2D" uid="uid://v6tew42d28xb" path="res://Assets/Enemies/Walk.png" id="4_ghaa6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_287tu"]
+radius = 11.0
+height = 78.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1dp5w"]
 atlas = ExtResource("2_287tu")
@@ -199,10 +203,14 @@ animations = [{
 }]
 
 [node name="Enemy" type="CharacterBody2D" unique_id=447933125]
+collision_layer = 4
 script = ExtResource("1_287tu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1359424232]
+position = Vector2(138, 55)
+shape = SubResource("CapsuleShape2D_287tu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=396867857]
+position = Vector2(144, 26)
 sprite_frames = SubResource("SpriteFrames_nxecp")
 animation = &"Walk"

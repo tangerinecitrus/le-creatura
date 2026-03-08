@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dlqme5ie8w4c3"]
+
+[ext_resource type="PackedScene" uid="uid://b2evu7f5wcch0" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://c31f3lvtjrm5n" path="res://Scenes/level.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://bfqt4wuoejn0w" path="res://Scenes/enemy.tscn" id="3_8gbba"]
+
+[node name="Main" type="Node" unique_id=555737730]
+
+[node name="TileMapLayer" parent="." unique_id=1764352994 instance=ExtResource("2_bo1nx")]
+
+[node name="Enemy" parent="." unique_id=447933125 instance=ExtResource("3_8gbba")]
+position = Vector2(346, 322)
+
+[node name="Player" parent="." unique_id=252480921 instance=ExtResource("1_jjgbg")]
+position = Vector2(109, 358)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk60nq20b36os"
-path="res://.godot/imported/FreeAsset.png-a70c6b7bd603d5e7a151606c4b090929.ctex"
+uid="uid://b3en3cqfbygfr"
+path="res://.godot/imported/Shoot.png-3148dc3200454d334cb8bb65ddf98c2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/FreeAsset.png"
-dest_files=["res://.godot/imported/FreeAsset.png-a70c6b7bd603d5e7a151606c4b090929.ctex"]
+source_file="res://Assets/Police/Shoot.png"
+dest_files=["res://.godot/imported/Shoot.png-3148dc3200454d334cb8bb65ddf98c2b.ctex"]
 
 [params]
 

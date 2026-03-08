@@ -3,13 +3,36 @@
 [ext_resource type="PackedScene" uid="uid://b2evu7f5wcch0" path="res://Scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://c31f3lvtjrm5n" path="res://Scenes/level.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://bfqt4wuoejn0w" path="res://Scenes/enemy.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://bdhrp5t5ujdrm" path="res://Scenes/Police.tscn" id="4_jjvhh"]
 
 [node name="Main" type="Node" unique_id=555737730]
 
 [node name="TileMapLayer" parent="." unique_id=1764352994 instance=ExtResource("2_bo1nx")]
 
 [node name="Enemy" parent="." unique_id=447933125 instance=ExtResource("3_8gbba")]
-position = Vector2(346, 322)
+position = Vector2(225, 288)
 
 [node name="Player" parent="." unique_id=252480921 instance=ExtResource("1_jjgbg")]
 position = Vector2(109, 358)
+move_speed = 500.0
+max_hunger = 100.0
+hunger_decay_rate = 5.0
+attack_range = 50.0
+hunger_restore = 30.0
+kills_until_police = 5
+police_scene = ExtResource("4_jjvhh")
+
+[node name="Enemy2" parent="." unique_id=463861086 instance=ExtResource("3_8gbba")]
+position = Vector2(492, 289)
+
+[node name="Enemy3" parent="." unique_id=1027561946 instance=ExtResource("3_8gbba")]
+position = Vector2(593, 291)
+
+[node name="Enemy4" parent="." unique_id=1642400142 instance=ExtResource("3_8gbba")]
+position = Vector2(280, 287)
+
+[node name="Enemy5" parent="." unique_id=2126773982 instance=ExtResource("3_8gbba")]
+position = Vector2(535, 290)
+
+[node name="Enemy6" parent="." unique_id=335883558 instance=ExtResource("3_8gbba")]
+position = Vector2(449, 291)

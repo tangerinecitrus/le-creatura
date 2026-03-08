@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://i5yfiqp7wj8y"]
+
+[ext_resource type="Script" uid="uid://blbjtxfsbdxf" path="res://Scripts/Police.gd" id="1_qbyfk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qbyfk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_210f3"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Police" type="CharacterBody2D" unique_id=585448602]
+script = ExtResource("1_qbyfk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=14100317]
+shape = SubResource("CapsuleShape2D_qbyfk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=621743023]
+sprite_frames = SubResource("SpriteFrames_210f3")
+animation = &"new_animation"

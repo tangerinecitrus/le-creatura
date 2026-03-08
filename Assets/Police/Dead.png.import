@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyemxvnjvejok"
-path="res://.godot/imported/BGFree2.png-98683ee6ee3bd30d33a68479df7e2aba.ctex"
+uid="uid://csxqd1audoaun"
+path="res://.godot/imported/Dead.png-bdabdf04db840e81ae2279cbcef1f463.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/BGFree2.png"
-dest_files=["res://.godot/imported/BGFree2.png-98683ee6ee3bd30d33a68479df7e2aba.ctex"]
+source_file="res://Assets/Police/Dead.png"
+dest_files=["res://.godot/imported/Dead.png-bdabdf04db840e81ae2279cbcef1f463.ctex"]
 
 [params]
 

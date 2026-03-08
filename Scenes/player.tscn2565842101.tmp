@@ -443,13 +443,6 @@ line_spacing = 24.0
 [node name="Player" type="CharacterBody2D" unique_id=252480921]
 collision_layer = 2
 script = ExtResource("1_3smsa")
-move_speed = null
-max_hunger = null
-hunger_decay_rate = null
-attack_range = null
-hunger_restore = null
-kills_until_police = null
-police_scene = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1764823028]
 position = Vector2(-6, 1)

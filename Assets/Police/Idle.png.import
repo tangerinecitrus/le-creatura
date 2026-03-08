@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d27dw8ssxepj6"
-path="res://.godot/imported/BGFree1.png-697f8f6d3f73e5b1c6fb286cd4413b13.ctex"
+uid="uid://bq08rtq5k7rte"
+path="res://.godot/imported/Idle.png-a2ac9729ac563b971e4f37c25e23a181.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/backgrounds/BGFree1.png"
-dest_files=["res://.godot/imported/BGFree1.png-697f8f6d3f73e5b1c6fb286cd4413b13.ctex"]
+source_file="res://Assets/Police/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-a2ac9729ac563b971e4f37c25e23a181.ctex"]
 
 [params]
 

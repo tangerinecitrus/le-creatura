@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk60nq20b36os"
-path="res://.godot/imported/FreeAsset.png-a70c6b7bd603d5e7a151606c4b090929.ctex"
+uid="uid://c8rspxvd188qc"
+path="res://.godot/imported/Attack_1.png-4ef2b46ed54ec41fd81b77c39a535c34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/FreeAsset.png"
-dest_files=["res://.godot/imported/FreeAsset.png-a70c6b7bd603d5e7a151606c4b090929.ctex"]
+source_file="res://Assets/Police/Attack_1.png"
+dest_files=["res://.godot/imported/Attack_1.png-4ef2b46ed54ec41fd81b77c39a535c34.ctex"]
 
 [params]
 

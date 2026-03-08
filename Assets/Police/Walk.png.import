@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk60nq20b36os"
-path="res://.godot/imported/FreeAsset.png-a70c6b7bd603d5e7a151606c4b090929.ctex"
+uid="uid://7rajdidrnnfb"
+path="res://.godot/imported/Walk.png-0fd24f00addfb0a8af38d3b179ca127b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tileset/FreeAsset.png"
-dest_files=["res://.godot/imported/FreeAsset.png-a70c6b7bd603d5e7a151606c4b090929.ctex"]
+source_file="res://Assets/Police/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-0fd24f00addfb0a8af38d3b179ca127b.ctex"]
 
 [params]
 
