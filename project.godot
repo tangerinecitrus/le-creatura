@@ -29,7 +29,7 @@ project/assembly_name="Le Creatura"
 [layer_names]
 
 2d_physics/layer_1="ground"
-2d_physics/layer_2="player and enemies"
+2d_physics/layer_2="player"
 
 [physics]
 
