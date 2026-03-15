@@ -1,6 +1,7 @@
 class_name Enemy
 extends CharacterBody2D
 
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var move_speed = 100.0
 @export var walk_duration = 3.0
 @export var idle_duration = 2.0
@@ -16,13 +17,18 @@ func _ready():
 
 func _physics_process(delta):
 	handle_behavior(delta)
+		# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
 
 func handle_behavior(delta):
+	move_and_slide()
 	state_timer += delta
 	
 	if is_walking:
 		# Walking state
-		var velocity = Vector2.ZERO
+		@warning_ignore("shadowed_variable_base_class")
+		#var velocity = Vector2.ZERO
 		velocity.x = move_speed if moving_right else -move_speed
 		sprite.flip_h = not moving_right
 		
@@ -35,7 +41,7 @@ func handle_behavior(delta):
 			play_idle_animation()
 	else:
 		# Idle state
-		self.velocity = Vector2.ZERO
+		self.velocity.x = 0
 		move_and_slide()
 		
 		if state_timer >= idle_duration:
@@ -43,6 +49,7 @@ func handle_behavior(delta):
 			is_walking = true
 			moving_right = not moving_right
 			play_walk_animation()
+	
 
 func play_idle_animation():
 	var idle_anim = "Idle" if randf() > 0.5 else "Idle_2"

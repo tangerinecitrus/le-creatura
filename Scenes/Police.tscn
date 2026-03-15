@@ -297,14 +297,12 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1101072371]
-position = Vector2(600, 293)
 script = ExtResource("1_im15c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1860571403]
-position = Vector2(29, 46)
 shape = SubResource("CapsuleShape2D_ffhnw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=195262423]
-position = Vector2(32, 15)
+position = Vector2(3, -31)
 sprite_frames = SubResource("SpriteFrames_clqfr")
 animation = &"Idle"

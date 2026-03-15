@@ -17,6 +17,8 @@ var hunger_label
 var current_hunger = 100.0
 var is_attacking = false
 var current_direction = 1  # 1 for right, -1 for left
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
 
 func _ready():
 	sprite.play("idle")
@@ -24,6 +26,11 @@ func _ready():
 	hunger_label = $CanvasLayer/HungerLabel
 
 func _physics_process(delta):
+	# Add the gravity.	
+	move_and_slide()
+	if not is_on_floor():
+		velocity.y += gravity * delta
+		
 	if not is_attacking:
 		handle_movement()
 		handle_hunger(delta)

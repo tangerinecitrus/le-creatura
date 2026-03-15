@@ -203,14 +203,13 @@ animations = [{
 }]
 
 [node name="Enemy" type="CharacterBody2D" unique_id=447933125]
-collision_layer = 4
+collision_layer = 0
 script = ExtResource("1_287tu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1359424232]
-position = Vector2(138, 55)
 shape = SubResource("CapsuleShape2D_287tu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=396867857]
-position = Vector2(144, 26)
+position = Vector2(6, -27)
 sprite_frames = SubResource("SpriteFrames_nxecp")
 animation = &"Walk"
