@@ -39,7 +39,7 @@ func _physics_process(delta):
 		perform_attack()
 
 func handle_movement():
-	var velocity = Vector2.ZERO
+	velocity.x = 0
 	
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += move_speed
